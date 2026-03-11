@@ -40,7 +40,7 @@ const Footer = () => (
       </div>
       <div className="border-t border-secondary-foreground/10 pt-6 text-center">
         <p className="text-secondary-foreground/40 text-sm">
-          © {new Date().getFullYear()} BuildCraft Construction. All rights reserved.
+          © {new Date().getFullYear()} Advance Builders. All rights reserved.
         </p>
       </div>
     </div>
