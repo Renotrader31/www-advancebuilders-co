@@ -7,10 +7,10 @@ const Navbar = () => (
     <div className="container mx-auto flex items-center justify-between py-4 px-4">
       <div className="flex items-center gap-2">
         <div className="h-10 w-10 rounded bg-primary flex items-center justify-center">
-          <span className="text-primary-foreground font-bold text-lg" style={{ fontFamily: 'system-ui' }}>BC</span>
+          <span className="text-primary-foreground font-bold text-lg" style={{ fontFamily: 'system-ui' }}>AB</span>
         </div>
         <span className="text-secondary-foreground text-xl font-bold tracking-tight" style={{ fontFamily: 'system-ui' }}>
-          BuildCraft
+          Advance Builders
         </span>
       </div>
       <div className="hidden md:flex items-center gap-8">
