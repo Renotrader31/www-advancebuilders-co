@@ -7,9 +7,9 @@ const Footer = () => (
         <div>
           <div className="flex items-center gap-2 mb-4">
             <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm" style={{ fontFamily: 'system-ui' }}>BC</span>
+              <span className="text-primary-foreground font-bold text-sm" style={{ fontFamily: 'system-ui' }}>AB</span>
             </div>
-            <span className="text-secondary-foreground text-lg font-bold" style={{ fontFamily: 'system-ui' }}>BuildCraft</span>
+            <span className="text-secondary-foreground text-lg font-bold" style={{ fontFamily: 'system-ui' }}>Advance Builders</span>
           </div>
           <p className="text-secondary-foreground/60 text-sm leading-relaxed">
             Quality construction services for commercial, residential, and handyman needs. Licensed, insured, and committed to excellence.
