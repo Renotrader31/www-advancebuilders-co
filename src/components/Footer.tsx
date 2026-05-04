@@ -1,15 +1,13 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => (
   <footer className="bg-secondary py-12">
     <div className="container mx-auto px-4">
       <div className="grid md:grid-cols-3 gap-8 mb-8">
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm" style={{ fontFamily: 'system-ui' }}>AB</span>
-            </div>
-            <span className="text-secondary-foreground text-lg font-bold" style={{ fontFamily: 'system-ui' }}>Advance Builders</span>
+          <div className="mb-4">
+            <img src={logo} alt="Advance Builders" className="h-14 w-auto" />
           </div>
           <p className="text-secondary-foreground/60 text-sm leading-relaxed">
             Quality construction services for commercial, residential, and handyman needs. Licensed, insured, and committed to excellence.
