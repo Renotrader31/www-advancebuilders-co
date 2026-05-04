@@ -17,7 +17,7 @@ const Navbar = () => (
         <Link to="/commercial-construction" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Commercial</Link>
         <Link to="/handyman-services" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Handyman</Link>
         <a href="/#about" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">About</a>
-        <a href="/#contact" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Contact</a>
+        <a href="/#contact" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Get a Free Quote</a>
       </div>
       <a href="tel:+15551234567" className="hidden sm:flex items-center gap-2 text-primary font-semibold text-sm">
         <Phone className="h-4 w-4" />

@@ -6,7 +6,7 @@ const Contact = () => (
     <div className="container mx-auto px-4">
       <div className="text-center mb-16">
         <p className="text-primary uppercase tracking-[0.3em] text-sm font-semibold mb-3" style={{ fontFamily: 'system-ui' }}>
-          Get In Touch
+          Get a Free Quote
         </p>
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground">
           Ready to Start Your Project?
