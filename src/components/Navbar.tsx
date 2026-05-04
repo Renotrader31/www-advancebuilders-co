@@ -13,7 +13,9 @@ const Navbar = () => (
         </span>
       </Link>
       <div className="hidden md:flex items-center gap-8">
-        <a href="/#services" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Services</a>
+        <Link to="/residential-construction" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Residential</Link>
+        <Link to="/commercial-construction" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Commercial</Link>
+        <Link to="/handyman-services" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Handyman</Link>
         <Link to="/projects" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Projects</Link>
         <a href="/#about" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">About</a>
         <a href="/#contact" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Contact</a>
