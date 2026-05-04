@@ -2,6 +2,7 @@ import commercialImg from "@/assets/service-commercial.jpg";
 import residentialImg from "@/assets/service-residential.jpg";
 import handymanImg from "@/assets/service-handyman.jpg";
 import { Building2, Home, Wrench } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -10,6 +11,7 @@ const services = [
     image: commercialImg,
     icon: Building2,
     items: ["Office Buildings", "Retail Spaces", "Warehouses", "Tenant Improvements"],
+    link: "/commercial-construction",
   },
   {
     title: "Residential Construction",
@@ -17,6 +19,7 @@ const services = [
     image: residentialImg,
     icon: Home,
     items: ["Custom Homes", "Renovations", "Additions", "Kitchen & Bath"],
+    link: "/residential-construction",
   },
   {
     title: "Handyman Services",
@@ -24,6 +27,7 @@ const services = [
     image: handymanImg,
     icon: Wrench,
     items: ["General Repairs", "Installations", "Painting", "Maintenance"],
+    link: "/handyman-services",
   },
 ];
 
@@ -38,7 +42,7 @@ const Services = () => (
       </div>
       <div className="grid md:grid-cols-3 gap-8">
         {services.map((service) => (
-          <div key={service.title} className="group bg-card rounded-sm overflow-hidden border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-xl">
+          <Link to={service.link} key={service.title} className="group bg-card rounded-sm overflow-hidden border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-xl">
             <div className="relative h-56 overflow-hidden">
               <img
                 src={service.image}
@@ -61,8 +65,13 @@ const Services = () => (
                   </li>
                 ))}
               </ul>
+              <div className="mt-4">
+                <span className="text-primary text-sm font-semibold uppercase tracking-wider group-hover:underline" style={{ fontFamily: 'system-ui' }}>
+                  Learn More →
+                </span>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
