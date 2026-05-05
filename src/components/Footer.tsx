@@ -41,7 +41,10 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div className="border-t border-secondary-foreground/10 pt-6 text-center">
+      <div className="border-t border-secondary-foreground/10 pt-6 text-center space-y-2">
+        <p className="text-secondary-foreground/60 text-sm font-semibold tracking-wider uppercase">
+          Nevada State Contractors License #0086187
+        </p>
         <p className="text-secondary-foreground/40 text-sm">
           © {new Date().getFullYear()} Advance Builders. All rights reserved.
         </p>

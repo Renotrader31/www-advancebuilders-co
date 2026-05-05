@@ -1,9 +1,9 @@
-import { Shield, Clock, Award, Users } from "lucide-react";
+import { Shield, Clock, Award, MapPin } from "lucide-react";
 
 const stats = [
-  { icon: Clock, value: "20+", label: "Years Experience" },
-  { icon: Award, value: "500+", label: "Projects Completed" },
-  { icon: Users, value: "100%", label: "Client Satisfaction" },
+  { icon: Clock, value: "50+", label: "Years Combined Experience" },
+  { icon: Award, value: "75+", label: "Projects Completed" },
+  { icon: MapPin, value: "Reno-Owned", label: "Local Leadership" },
   { icon: Shield, value: "Licensed", label: "& Insured" },
 ];
 
@@ -19,10 +19,10 @@ const About = () => (
             Built on Trust.<br />Driven by Quality.
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            With over two decades of experience in the construction industry, Advance Builders has earned a reputation for exceptional craftsmanship, honest communication, and delivering results that exceed expectations. Whether it's a multi-story commercial build or a simple home repair, we bring the same level of dedication to every project.
+            The Advance Builders team brings over 50 years of combined experience in the construction industry. We've completed more than 75 projects of every scope — from a quick repair to a full ground-up build — for homeowners, businesses, and developers across the Reno-Sparks, Carson City, and Tahoe area.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            We're a family-owned business that treats every client like a neighbor. Our team of licensed professionals is committed to getting the job done right — the first time.
+            Joe Irvin, our partner and general manager, is a Reno native who has built and renovated throughout the region for years. He knows our codes, our suppliers, our weather — and most importantly, our neighbors. That local know-how shows up in every job we take on.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-6">

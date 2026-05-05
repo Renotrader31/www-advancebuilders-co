@@ -52,7 +52,7 @@ const CommercialConstruction = () => (
               Advance Builders has the expertise and resources to handle commercial construction projects of all sizes. We understand that time is money in the commercial world, and we're committed to delivering your project on schedule and within budget.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Our team coordinates with architects, engineers, and inspectors to ensure seamless project execution. We maintain the highest safety standards and comply with all local building codes and regulations throughout Northern Nevada.
+              Our team coordinates with architects, engineers, and inspectors to ensure seamless project execution. We maintain the highest safety standards and comply with all local building codes and regulations throughout the Reno-Sparks, Carson City, and Tahoe area.
             </p>
             <Link
               to="/#contact"
