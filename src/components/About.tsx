@@ -19,7 +19,7 @@ const About = () => (
             Built on Trust.<br />Driven by Quality.
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            With over two decades of experience in the construction industry, BuildCraft has earned a reputation for exceptional craftsmanship, honest communication, and delivering results that exceed expectations. Whether it's a multi-story commercial build or a simple home repair, we bring the same level of dedication to every project.
+            With over two decades of experience in the construction industry, Advance Builders has earned a reputation for exceptional craftsmanship, honest communication, and delivering results that exceed expectations. Whether it's a multi-story commercial build or a simple home repair, we bring the same level of dedication to every project.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             We're a family-owned business that treats every client like a neighbor. Our team of licensed professionals is committed to getting the job done right — the first time.

@@ -1,6 +1,7 @@
 import heroImage from "@/assets/hero-construction.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => (
   <section className="relative min-h-[90vh] flex items-center justify-start overflow-hidden">
@@ -25,11 +26,13 @@ const Hero = () => (
           Quality craftsmanship and reliable service for every project — from ground-up construction to everyday repairs.
         </p>
         <div className="flex flex-wrap gap-4">
-          <Button size="lg" className="text-base px-8 py-6 rounded-none uppercase tracking-wider font-bold">
-            Get a Free Quote <ArrowRight className="ml-2 h-5 w-5" />
+          <Button asChild size="lg" className="text-base px-8 py-6 rounded-none uppercase tracking-wider font-bold">
+            <a href="#contact">
+              Get a Free Quote <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </Button>
-          <Button variant="outline" size="lg" className="text-base px-8 py-6 rounded-none uppercase tracking-wider font-bold border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground">
-            Our Services
+          <Button asChild variant="outline" size="lg" className="text-base px-8 py-6 rounded-none uppercase tracking-wider font-bold border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground">
+            <Link to="/projects">View Our Projects</Link>
           </Button>
         </div>
       </div>

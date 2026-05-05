@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.jpg";
 
 const Footer = () => (
@@ -16,22 +17,26 @@ const Footer = () => (
         <div>
           <h4 className="text-secondary-foreground font-bold mb-4 uppercase text-sm tracking-wider" style={{ fontFamily: 'system-ui' }}>Quick Links</h4>
           <div className="space-y-2">
-            <a href="#services" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Services</a>
-            <a href="#about" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">About Us</a>
-            <a href="#contact" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Contact</a>
+            <Link to="/residential-construction" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Residential</Link>
+            <Link to="/commercial-construction" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Commercial</Link>
+            <Link to="/handyman-services" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Handyman</Link>
+            <Link to="/projects" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Projects</Link>
+            <a href="/#about" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">About Us</a>
+            <a href="/#contact" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Contact</a>
           </div>
         </div>
         <div>
           <h4 className="text-secondary-foreground font-bold mb-4 uppercase text-sm tracking-wider" style={{ fontFamily: 'system-ui' }}>Contact Info</h4>
           <div className="space-y-3">
-            <div className="flex items-center gap-2 text-secondary-foreground/60 text-sm">
-              <Phone className="h-4 w-4 text-primary" /> (555) 123-4567
-            </div>
-            <div className="flex items-center gap-2 text-secondary-foreground/60 text-sm">
-              <Mail className="h-4 w-4 text-primary" /> info@buildcraft.com
-            </div>
-            <div className="flex items-center gap-2 text-secondary-foreground/60 text-sm">
-              <MapPin className="h-4 w-4 text-primary" /> 123 Construction Ave
+            <a href="tel:+17758467796" className="flex items-center gap-2 text-secondary-foreground/60 hover:text-primary transition-colors text-sm">
+              <Phone className="h-4 w-4 text-primary" /> (775) 846-7796
+            </a>
+            <a href="mailto:info@advancebc.co" className="flex items-center gap-2 text-secondary-foreground/60 hover:text-primary transition-colors text-sm">
+              <Mail className="h-4 w-4 text-primary" /> info@advancebc.co
+            </a>
+            <div className="flex items-start gap-2 text-secondary-foreground/60 text-sm">
+              <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+              <span>2385 Harbor Circle<br />Reno, NV 89519</span>
             </div>
           </div>
         </div>
