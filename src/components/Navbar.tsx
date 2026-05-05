@@ -6,7 +6,7 @@ const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-sm">
     <div className="container mx-auto flex items-center justify-between py-4 px-4">
       <Link to="/" className="flex items-center gap-2">
-        <img src={logo} alt="Advance Builders" className="h-12 w-auto" />
+        <img src={logo} alt="Advance Builders" className="h-16 w-auto" />
       </Link>
       <div className="hidden md:flex items-center gap-8">
         <Link to="/residential-construction" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm uppercase tracking-widest">Residential</Link>

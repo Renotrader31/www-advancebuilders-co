@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-8 mb-8">
         <div>
           <div className="mb-4">
-            <img src={logo} alt="Advance Builders" className="h-14 w-auto" />
+            <img src={logo} alt="Advance Builders" className="h-20 w-auto" />
           </div>
           <p className="text-secondary-foreground/60 text-sm leading-relaxed">
             Quality construction services for commercial, residential, and handyman needs. Licensed, insured, and committed to excellence.
