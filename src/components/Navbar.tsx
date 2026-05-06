@@ -1,7 +1,7 @@
 import { Phone, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 
 const navLinks: { to: string; label: string; isAnchor?: boolean }[] = [
   { to: "/residential-construction", label: "Residential" },
