@@ -14,10 +14,10 @@ const services = [
   },
   {
     title: "Residential Construction",
-    description: "Custom homes, renovations, and additions that transform your living space into something extraordinary.",
+    description: "Renovations, additions, and remodels that transform your home into something extraordinary.",
     image: residentialImg,
     icon: Home,
-    items: ["Custom Homes", "Renovations", "Additions", "Kitchen & Bath"],
+    items: ["Renovations", "Additions", "Kitchen & Bath", "Flooring & Tile"],
     link: "/residential-construction",
   },
 ];

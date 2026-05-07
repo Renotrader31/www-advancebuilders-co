@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import residentialImg from "@/assets/service-residential.jpg";
 
 const services = [
-  "Custom Homes",
   "Renovations",
   "Additions",
   "Kitchen & Bath",
@@ -33,7 +32,7 @@ const ResidentialConstruction = () => (
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Residential Construction</h1>
             <p className="text-white/80 max-w-2xl text-lg">
-              Custom homes, renovations, and additions that transform your living space into something extraordinary.
+              Renovations, additions, and remodels that transform the home you already love.
             </p>
           </div>
         </div>
@@ -46,10 +45,10 @@ const ResidentialConstruction = () => (
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="text-3xl font-extrabold text-foreground mb-6" style={{ fontFamily: 'system-ui' }}>
-              Building Your Dream Home
+              Transforming Your Home
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Whether you're building from the ground up or transforming your existing home, Advance Builders brings craftsmanship and attention to detail to every residential project. We work closely with homeowners to understand their vision and deliver results that exceed expectations.
+              Whether you're updating a single room or planning a major remodel, Advance Builders brings craftsmanship and attention to detail to every residential project. We work closely with homeowners to understand their vision and deliver results that exceed expectations.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               From initial design consultation through final walkthrough, our experienced team manages every aspect of your project. We use quality materials, trusted subcontractors, and proven construction methods to ensure your home is built to last.
