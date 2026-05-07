@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-secondary py-12">
@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-8 mb-8">
         <div>
           <div className="mb-4">
-            <img src={logo} alt="Advance Builders" className="h-20 w-auto" />
+            <img src={logo} alt="Advance Builders" className="h-24 w-auto" />
           </div>
           <p className="text-secondary-foreground/60 text-sm leading-relaxed">
             Quality construction services for commercial and residential clients. Licensed, insured, and committed to excellence.

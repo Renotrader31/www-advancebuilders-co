@@ -1,7 +1,7 @@
 import { Phone, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 
 const navLinks: { to: string; label: string; isAnchor?: boolean }[] = [
   { to: "/residential-construction", label: "Residential" },
@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-sm">
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         <Link to="/" className="flex items-center gap-2" onClick={close}>
-          <img src={logo} alt="Advance Builders" className="h-16 w-auto" />
+          <img src={logo} alt="Advance Builders" className="h-20 w-auto" />
         </Link>
 
         {/* Desktop nav */}
