@@ -1,7 +1,6 @@
 import commercialImg from "@/assets/service-commercial.jpg";
 import residentialImg from "@/assets/service-residential.jpg";
-import handymanImg from "@/assets/service-handyman.jpg";
-import { Building2, Home, Wrench } from "lucide-react";
+import { Building2, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
@@ -21,14 +20,6 @@ const services = [
     items: ["Custom Homes", "Renovations", "Additions", "Kitchen & Bath"],
     link: "/residential-construction",
   },
-  {
-    title: "Handyman Services",
-    description: "No job is too small. Our skilled professionals handle repairs, installations, and maintenance with care.",
-    image: handymanImg,
-    icon: Wrench,
-    items: ["General Repairs", "Installations", "Painting", "Maintenance"],
-    link: "/handyman-services",
-  },
 ];
 
 const Services = () => (
@@ -40,7 +31,7 @@ const Services = () => (
         </p>
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground">Our Services</h2>
       </div>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {services.map((service) => (
           <Link to={service.link} key={service.title} className="group bg-card rounded-sm overflow-hidden border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-xl">
             <div className="relative h-56 overflow-hidden">

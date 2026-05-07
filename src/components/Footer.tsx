@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => (
   <footer className="bg-secondary py-12">
@@ -11,7 +11,7 @@ const Footer = () => (
             <img src={logo} alt="Advance Builders" className="h-20 w-auto" />
           </div>
           <p className="text-secondary-foreground/60 text-sm leading-relaxed">
-            Quality construction services for commercial, residential, and handyman needs. Licensed, insured, and committed to excellence.
+            Quality construction services for commercial and residential clients. Licensed, insured, and committed to excellence.
           </p>
         </div>
         <div>
@@ -19,7 +19,6 @@ const Footer = () => (
           <div className="space-y-2">
             <Link to="/residential-construction" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Residential</Link>
             <Link to="/commercial-construction" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Commercial</Link>
-            <Link to="/handyman-services" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Handyman</Link>
             <Link to="/projects" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Projects</Link>
             <a href="/#about" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">About Us</a>
             <a href="/#contact" className="block text-secondary-foreground/60 hover:text-primary transition-colors text-sm">Contact</a>

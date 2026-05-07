@@ -1,12 +1,11 @@
 import { Phone, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpg";
 
 const navLinks: { to: string; label: string; isAnchor?: boolean }[] = [
   { to: "/residential-construction", label: "Residential" },
   { to: "/commercial-construction", label: "Commercial" },
-  { to: "/handyman-services", label: "Handyman" },
   { to: "/projects", label: "Projects" },
   { to: "/#about", label: "About", isAnchor: true },
   { to: "/#contact", label: "Get a Free Quote", isAnchor: true },

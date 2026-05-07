@@ -11,7 +11,7 @@ import projectResidential1 from "@/assets/project-residential-1.jpg";
 import projectResidential2 from "@/assets/project-residential-2.jpg";
 import projectResidential3 from "@/assets/project-residential-3.jpg";
 
-const categories = ["All", "Commercial", "Residential", "Handyman"] as const;
+const categories = ["All", "Commercial", "Residential"] as const;
 
 const projects = [
   {
@@ -88,7 +88,7 @@ const Projects = () => {
             </p>
             <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">Our Projects</h1>
             <p className="text-muted-foreground max-w-2xl">
-              Take a look at some of the commercial, residential, and handyman projects we've completed for our clients throughout Northern Nevada.
+              Take a look at some of the commercial and residential projects we've completed for clients across the Reno-Sparks, Carson City, and Tahoe area.
             </p>
           </div>
 
