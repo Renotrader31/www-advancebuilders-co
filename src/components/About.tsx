@@ -16,7 +16,7 @@ const About = () => (
             About Us
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">
-            Built on Trust.<br />Driven by Quality.
+            Quality-driven construction you can trust.
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             The Advance Builders team brings over 50 years of combined experience in the construction industry. We've completed more than 75 projects of every scope for homeowners, businesses, and developers across the Reno-Sparks, Carson City, and Tahoe area.
