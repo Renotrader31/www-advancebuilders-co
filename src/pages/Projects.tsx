@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import projectCommercial1 from "@/assets/project-commercial-1.jpg";
 import projectCommercial2 from "@/assets/project-commercial-2.jpg";
 import projectCommercial3 from "@/assets/project-commercial-3.jpg";
 import projectResidential2 from "@/assets/project-residential-2.jpg";
@@ -13,14 +12,6 @@ import projectResidential3 from "@/assets/project-residential-3.jpg";
 const categories = ["All", "Commercial", "Residential"] as const;
 
 const projects = [
-  {
-    title: "Downtown Office Complex",
-    category: "Commercial",
-    description: "A 5-story Class A office building featuring modern glass curtain walls, energy-efficient HVAC, and premium tenant finishes.",
-    image: projectCommercial1,
-    location: "Reno, NV",
-    year: "2024",
-  },
   {
     title: "Industrial Chic Restaurant",
     category: "Commercial",

@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const services = [
   {
     title: "Commercial Construction",
-    description: "From office buildings to retail spaces, we deliver commercial projects on time and on budget with uncompromising quality.",
+    description: "From retail buildouts to tenant improvements, we deliver commercial projects on time and on budget — with no surprises.",
     image: commercialImg,
     icon: Building2,
-    items: ["Office Buildings", "Retail Spaces", "Warehouses", "Tenant Improvements"],
+    items: ["Retail Spaces", "Warehouses", "Tenant Improvements", "Restaurant Buildouts"],
     link: "/commercial-construction",
   },
   {

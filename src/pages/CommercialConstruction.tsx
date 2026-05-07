@@ -5,13 +5,10 @@ import { Link } from "react-router-dom";
 import commercialImg from "@/assets/service-commercial.jpg";
 
 const services = [
-  "Office Buildings",
   "Retail Spaces",
   "Warehouses & Industrial",
   "Tenant Improvements",
   "Restaurant & Hospitality Buildouts",
-  "Medical & Dental Offices",
-  "Mixed-Use Developments",
   "ADA Compliance & Upgrades",
 ];
 
@@ -33,7 +30,7 @@ const CommercialConstruction = () => (
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Commercial Construction</h1>
             <p className="text-white/80 max-w-2xl text-lg">
-              From office buildings to retail spaces, we deliver commercial projects on time and on budget with uncompromising quality.
+              From retail buildouts to tenant improvements, we deliver commercial projects on time and on budget — with no surprises.
             </p>
           </div>
         </div>
