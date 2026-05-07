@@ -19,10 +19,10 @@ const About = () => (
             Built on Trust.<br />Driven by Quality.
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            The Advance Builders team brings over 50 years of combined experience in the construction industry. We've completed more than 75 projects of every scope — from a quick repair to a full ground-up build — for homeowners, businesses, and developers across the Reno-Sparks, Carson City, and Tahoe area.
+            The Advance Builders team brings over 50 years of combined experience in the construction industry. We've completed more than 75 projects of every scope for homeowners, businesses, and developers across the Reno-Sparks, Carson City, and Tahoe area.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Joe Irvin, our partner and general manager, is a Reno native who has built and renovated throughout the region for years. He knows our codes, our suppliers, our weather — and most importantly, our neighbors. That local know-how shows up in every job we take on.
+            Joe Irvin, our partner and general manager, is a Reno native who has built and renovated throughout the region for years. He knows our codes, our suppliers, our weather, and most importantly, our neighbors. That local know-how shows up in every job we take on.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-6">
