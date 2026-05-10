@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+import { cloudflare } from "@cloudflare/vite-plugin";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -13,7 +14,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: mode === "development" ? [react(), componentTagger()] : [react()],
+  plugins: mode === "development" ? [react(), componentTagger(), cloudflare()] : [react(), cloudflare()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
