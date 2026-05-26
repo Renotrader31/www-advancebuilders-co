@@ -42,11 +42,11 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <a
-            href="tel:+17758467796"
+            href="tel:+17754700835"
             className="hidden sm:flex items-center gap-2 text-primary font-semibold text-sm"
           >
             <Phone className="h-4 w-4" />
-            (775) 846-7796
+            (775) 470-0835
           </a>
 
           {/* Mobile menu toggle */}
@@ -78,12 +78,12 @@ const Navbar = () => {
               )
             )}
             <a
-              href="tel:+17758467796"
+              href="tel:+17754700835"
               className="flex sm:hidden items-center gap-2 text-primary font-semibold text-sm pt-2 border-t border-secondary-foreground/10"
               onClick={close}
             >
               <Phone className="h-4 w-4" />
-              (775) 846-7796
+              (775) 470-0835
             </a>
           </div>
         </div>
