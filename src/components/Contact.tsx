@@ -29,11 +29,11 @@ const Contact = () => {
         form.reset();
       } else {
         setStatus("error");
-        toast.error("Something went wrong. Please call us at (775) 846-7796.");
+        toast.error("Something went wrong. Please call us at (775) 470-0835.");
       }
     } catch {
       setStatus("error");
-      toast.error("Something went wrong. Please call us at (775) 846-7796.");
+      toast.error("Something went wrong. Please call us at (775) 470-0835.");
     }
   };
 
@@ -56,7 +56,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-bold text-foreground mb-1" style={{ fontFamily: 'system-ui' }}>Call Us</h3>
-                <a href="tel:+17758467796" className="text-muted-foreground hover:text-primary transition-colors">(775) 846-7796</a>
+                <a href="tel:+17754700835" className="text-muted-foreground hover:text-primary transition-colors">(775) 470-0835</a>
               </div>
             </div>
             <div className="flex items-start gap-4">

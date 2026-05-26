@@ -27,8 +27,8 @@ const Footer = () => (
         <div>
           <h4 className="text-secondary-foreground font-bold mb-4 uppercase text-sm tracking-wider" style={{ fontFamily: 'system-ui' }}>Contact Info</h4>
           <div className="space-y-3">
-            <a href="tel:+17758467796" className="flex items-center gap-2 text-secondary-foreground/60 hover:text-primary transition-colors text-sm">
-              <Phone className="h-4 w-4 text-primary" /> (775) 846-7796
+            <a href="tel:+17754700835" className="flex items-center gap-2 text-secondary-foreground/60 hover:text-primary transition-colors text-sm">
+              <Phone className="h-4 w-4 text-primary" /> (775) 470-0835
             </a>
             <a href="mailto:info@advancebc.co" className="flex items-center gap-2 text-secondary-foreground/60 hover:text-primary transition-colors text-sm">
               <Mail className="h-4 w-4 text-primary" /> info@advancebc.co
