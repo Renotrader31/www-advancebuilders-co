@@ -8,10 +8,30 @@ import projectCommercial2 from "@/assets/project-commercial-2.jpg";
 import projectCommercial3 from "@/assets/project-commercial-3.jpg";
 import projectResidential2 from "@/assets/project-residential-2.jpg";
 import projectResidential3 from "@/assets/project-residential-3.jpg";
+import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
 
 const categories = ["All", "Commercial", "Residential"] as const;
 
-const projects = [
+type Project = {
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  beforeImage?: string;
+  location: string;
+  year: string;
+};
+
+const projects: Project[] = [
+  {
+    title: "Composite Deck & Cedar Pergola",
+    category: "Residential",
+    description:
+      "Custom backyard build featuring a low-maintenance composite deck, a cedar pergola with steel bracket hardware, and flagstone walkway landscaping.",
+    image: deckPergola.url,
+    location: "Reno, NV",
+    year: "2025",
+  },
   {
     title: "Industrial Chic Restaurant",
     category: "Commercial",
