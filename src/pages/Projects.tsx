@@ -5,12 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import projectCommercial2 from "@/assets/project-commercial-2.jpg";
-import projectCommercial3 from "@/assets/project-commercial-3.jpg";
 import projectResidential2 from "@/assets/project-residential-2.jpg";
 import projectResidential3 from "@/assets/project-residential-3.jpg";
-import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
-import seoulfulBitesBefore from "@/assets/seoulful-bites-before.jpg.asset.json";
-import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
 
 const categories = ["All", "Commercial", "Residential", "Handyman"] as const;
 
