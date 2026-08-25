@@ -49,30 +49,6 @@ const projects: Project[] = [
     location: "Midtown Reno, NV",
     year: "2023",
   },
-  {
-    title: "Modern Kitchen Renovation",
-    category: "Residential",
-    description: "Complete kitchen gut-and-remodel with marble countertops, custom cabinetry, and professional-grade appliances.",
-    image: projectResidential2,
-    location: "South Reno, NV",
-    year: "2023",
-  },
-  {
-    title: "Retail Storefront Buildout",
-    category: "Commercial",
-    description: "Contemporary retail space with curved glass facade, modern interior layout, and custom display installations.",
-    image: projectCommercial3,
-    location: "Summit Sierra, NV",
-    year: "2023",
-  },
-  {
-    title: "Spa Bathroom Remodel",
-    category: "Residential",
-    description: "Luxury master bath renovation featuring walk-in rain shower, double vanity, and floor-to-ceiling tile work.",
-    image: projectResidential3,
-    location: "Caughlin Ranch, NV",
-    year: "2024",
-  },
 ];
 
 const projectLists: Record<string, string[]> = {
