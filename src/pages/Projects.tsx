@@ -9,6 +9,8 @@ import projectCommercial3 from "@/assets/project-commercial-3.jpg";
 import projectResidential2 from "@/assets/project-residential-2.jpg";
 import projectResidential3 from "@/assets/project-residential-3.jpg";
 import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
+import seoulfulBitesBefore from "@/assets/seoulful-bites-before.jpg.asset.json";
+import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
 
 const categories = ["All", "Commercial", "Residential"] as const;
 
@@ -29,6 +31,16 @@ const projects: Project[] = [
     description:
       "Custom backyard build featuring a low-maintenance composite deck, a cedar pergola with steel bracket hardware, and flagstone walkway landscaping.",
     image: deckPergola.url,
+    location: "Reno, NV",
+    year: "2025",
+  },
+  {
+    title: "Seoulful Bites Build-Out",
+    category: "Commercial",
+    description:
+      "Complete commercial tenant improvement for a self-service ramen bar, transforming an unfinished shell into a vibrant retail and dining experience.",
+    image: seoulfulBitesAfter.url,
+    beforeImage: seoulfulBitesBefore.url,
     location: "Reno, NV",
     year: "2025",
   },
