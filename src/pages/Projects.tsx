@@ -12,7 +12,7 @@ import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
 import seoulfulBitesBefore from "@/assets/seoulful-bites-before.jpg.asset.json";
 import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
 
-const categories = ["All", "Commercial", "Residential"] as const;
+const categories = ["All", "Commercial", "Residential", "Handyman"] as const;
 
 type Project = {
   title: string;
@@ -78,6 +78,22 @@ const projects: Project[] = [
   },
 ];
 
+const projectLists: Record<string, string[]> = {
+  Commercial: [
+    "New Restaurant Build-Out",
+    "NW Reno Salon",
+    "Midtown Reno",
+    "Insurance Renovation - Reno",
+  ],
+  Residential: [
+    "Bathroom and Kitchen Remodel - Reno",
+    "Multi Family Building Renovation",
+  ],
+  Handyman: [
+    "Contact us to learn about recent handyman projects and repairs we've completed.",
+  ],
+};
+
 type Category = (typeof categories)[number];
 
 const Projects = () => {
@@ -86,6 +102,10 @@ const Projects = () => {
   const filtered = activeCategory === "All"
     ? projects
     : projects.filter((p) => p.category === activeCategory);
+
+  const visibleCategories = activeCategory === "All"
+    ? categories.filter((c) => c !== "All")
+    : [activeCategory];
 
   return (
     <>
@@ -102,7 +122,7 @@ const Projects = () => {
             </p>
             <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">Our Projects</h1>
             <p className="text-muted-foreground max-w-2xl">
-              Take a look at some of the commercial and residential projects we've completed for clients across the Reno-Sparks, Carson City, and Tahoe area.
+              Take a look at some of the commercial, residential, and handyman projects we've completed for clients across the Reno-Sparks, Carson City, and Tahoe area.
             </p>
           </div>
 
@@ -176,6 +196,23 @@ const Projects = () => {
                     <span>{project.year}</span>
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Project Name Lists */}
+          <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {visibleCategories.map((cat) => (
+              <div key={cat} className="bg-card border border-border rounded-sm p-6">
+                <h2 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'system-ui' }}>{cat} Projects</h2>
+                <ul className="space-y-2">
+                  {projectLists[cat]?.map((item, index) => (
+                    <li key={index} className="flex items-start gap-3 text-muted-foreground text-sm">
+                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
