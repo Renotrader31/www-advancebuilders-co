@@ -8,10 +8,30 @@ import projectCommercial2 from "@/assets/project-commercial-2.jpg";
 import projectCommercial3 from "@/assets/project-commercial-3.jpg";
 import projectResidential2 from "@/assets/project-residential-2.jpg";
 import projectResidential3 from "@/assets/project-residential-3.jpg";
+import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
 
 const categories = ["All", "Commercial", "Residential"] as const;
 
-const projects = [
+type Project = {
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  beforeImage?: string;
+  location: string;
+  year: string;
+};
+
+const projects: Project[] = [
+  {
+    title: "Composite Deck & Cedar Pergola",
+    category: "Residential",
+    description:
+      "Custom backyard build featuring a low-maintenance composite deck, a cedar pergola with steel bracket hardware, and flagstone walkway landscaping.",
+    image: deckPergola.url,
+    location: "Reno, NV",
+    year: "2025",
+  },
   {
     title: "Industrial Chic Restaurant",
     category: "Commercial",
@@ -97,12 +117,39 @@ const Projects = () => {
             {filtered.map((project) => (
               <div key={project.title} className="group bg-card rounded-sm overflow-hidden border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-xl">
                 <div className="relative h-56 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
+                  {project.beforeImage ? (
+                    <div className="grid grid-cols-2 h-full gap-px bg-border">
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={project.beforeImage}
+                          alt={`${project.title} before`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                        <span className="absolute bottom-2 left-2 bg-secondary/90 text-secondary-foreground text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm">
+                          Before
+                        </span>
+                      </div>
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={`${project.title} after`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                        <span className="absolute bottom-2 left-2 bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm">
+                          After
+                        </span>
+                      </div>
+                    </div>
+                  ) : (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  )}
                   <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded-sm">
                     <span className="text-primary-foreground text-xs font-bold uppercase tracking-wider" style={{ fontFamily: 'system-ui' }}>
                       {project.category}
