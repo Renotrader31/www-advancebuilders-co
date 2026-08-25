@@ -117,12 +117,39 @@ const Projects = () => {
             {filtered.map((project) => (
               <div key={project.title} className="group bg-card rounded-sm overflow-hidden border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-xl">
                 <div className="relative h-56 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
+                  {project.beforeImage ? (
+                    <div className="grid grid-cols-2 h-full gap-px bg-border">
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={project.beforeImage}
+                          alt={`${project.title} before`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                        <span className="absolute bottom-2 left-2 bg-secondary/90 text-secondary-foreground text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm">
+                          Before
+                        </span>
+                      </div>
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={`${project.title} after`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                        <span className="absolute bottom-2 left-2 bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm">
+                          After
+                        </span>
+                      </div>
+                    </div>
+                  ) : (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  )}
                   <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded-sm">
                     <span className="text-primary-foreground text-xs font-bold uppercase tracking-wider" style={{ fontFamily: 'system-ui' }}>
                       {project.category}
