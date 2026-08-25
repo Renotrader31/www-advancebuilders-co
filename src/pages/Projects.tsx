@@ -5,9 +5,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import projectCommercial2 from "@/assets/project-commercial-2.jpg";
-import projectCommercial3 from "@/assets/project-commercial-3.jpg";
-import projectResidential2 from "@/assets/project-residential-2.jpg";
-import projectResidential3 from "@/assets/project-residential-3.jpg";
 import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
 import seoulfulBitesBefore from "@/assets/seoulful-bites-before.jpg.asset.json";
 import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
@@ -51,30 +48,6 @@ const projects: Project[] = [
     image: projectCommercial2,
     location: "Midtown Reno, NV",
     year: "2023",
-  },
-  {
-    title: "Modern Kitchen Renovation",
-    category: "Residential",
-    description: "Complete kitchen gut-and-remodel with marble countertops, custom cabinetry, and professional-grade appliances.",
-    image: projectResidential2,
-    location: "South Reno, NV",
-    year: "2023",
-  },
-  {
-    title: "Retail Storefront Buildout",
-    category: "Commercial",
-    description: "Contemporary retail space with curved glass facade, modern interior layout, and custom display installations.",
-    image: projectCommercial3,
-    location: "Summit Sierra, NV",
-    year: "2023",
-  },
-  {
-    title: "Spa Bathroom Remodel",
-    category: "Residential",
-    description: "Luxury master bath renovation featuring walk-in rain shower, double vanity, and floor-to-ceiling tile work.",
-    image: projectResidential3,
-    location: "Caughlin Ranch, NV",
-    year: "2024",
   },
 ];
 
