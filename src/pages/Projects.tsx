@@ -59,7 +59,7 @@ const projectLists: Record<string, string[]> = {
     "Insurance Renovation",
   ],
   Residential: [
-    "Bathroom and Kitchen Remodel - Reno",
+    "Bathroom and Kitchen Remodel",
     "Multi Family Building Renovation",
   ],
   Handyman: [
