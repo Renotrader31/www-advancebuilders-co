@@ -54,9 +54,9 @@ const projects: Project[] = [
 const projectLists: Record<string, string[]> = {
   Commercial: [
     "New Restaurant Build-Out",
-    "NW Reno Salon",
-    "Midtown Reno",
-    "Insurance Renovation - Reno",
+    "Salon Build-Out",
+    "Restaurant Renovation",
+    "Insurance Renovation",
   ],
   Residential: [
     "Bathroom and Kitchen Remodel - Reno",
