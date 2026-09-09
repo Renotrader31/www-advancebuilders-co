@@ -8,6 +8,7 @@ import projectCommercial2 from "@/assets/project-commercial-2.jpg";
 import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
 import seoulfulBitesBefore from "@/assets/seoulful-bites-before.jpg.asset.json";
 import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
+import seoulfulBitesAfter2 from "@/assets/seoulful-bites-after-2.jpg.asset.json";
 
 const categories = ["All", "Commercial", "Residential", "Handyman"] as const;
 
@@ -17,6 +18,7 @@ type Project = {
   description: string;
   image: string;
   beforeImage?: string;
+  afterImages?: string[];
   location: string;
   year: string;
 };
@@ -38,6 +40,7 @@ const projects: Project[] = [
       "Complete commercial tenant improvement for a self-service ramen bar, transforming an unfinished shell into a vibrant retail and dining experience.",
     image: seoulfulBitesAfter.url,
     beforeImage: seoulfulBitesBefore.url,
+    afterImages: [seoulfulBitesAfter2.url],
     location: "Reno, NV",
     year: "2025",
   },
@@ -57,6 +60,7 @@ const projectLists: Record<string, string[]> = {
     "Salon Build-Out",
     "Restaurant Renovation",
     "Insurance Renovation",
+    "Bar/Nightclub Remodel",
   ],
   Residential: [
     "Bathroom and Kitchen Remodel",
