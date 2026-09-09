@@ -19,7 +19,7 @@ const About = () => (
             Quality-driven construction you can trust.
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            The Advance Builders team brings over 50 years of combined experience in the construction industry. From commercial construction to kitchen and bathroom remodels to handyman services in Reno, NV, we've completed more than 75 projects of every scope for homeowners, businesses, and developers across the Reno-Sparks, Carson City, and Tahoe area.
+            The Advance Builders team brings over 50 years of combined experience in the construction industry. From kitchen and bathroom remodels to residential construction to commercial construction to handyman services in Reno, NV, we've completed more than 75 projects of every scope for homeowners, businesses, and developers across the Reno-Sparks, Carson City, and Tahoe area.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             Our General Manager and Partner is a Reno native who has built and renovated throughout the region for years. They know our codes, our suppliers, our weather, and most importantly, our neighbors. That local know-how shows up in every job we take on.
