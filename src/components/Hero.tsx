@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Hero = () => (
   <section className="relative min-h-[90vh] flex items-center justify-start overflow-hidden">
     <img
-      src={heroAsset.url}
+      src={heroImg}
       alt="Finished kitchen and dining area built by Advance Builders"
       className="absolute inset-0 w-full h-full object-cover"
       loading="eager"
