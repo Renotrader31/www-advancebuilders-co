@@ -1,4 +1,4 @@
-import heroAsset from "@/assets/hero-interior.png.asset.json";
+import heroImg from "@/assets/hero-interior-hd.png";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
