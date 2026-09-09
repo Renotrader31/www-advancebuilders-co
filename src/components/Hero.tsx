@@ -15,7 +15,7 @@ const Hero = () => (
     <div className="relative z-10 container mx-auto px-4 pt-24">
       <div className="max-w-2xl">
         <p className="text-primary uppercase tracking-[0.3em] text-sm font-semibold mb-4" style={{ fontFamily: 'system-ui' }}>
-          Reno · Sparks · Carson City · Tahoe
+          General Contractor — Reno · Sparks · Carson City · Tahoe
         </p>
         <h1 className="text-5xl md:text-7xl font-extrabold leading-[0.95] mb-6" style={{ fontFamily: 'system-ui', color: 'hsl(30 10% 95%)' }}>
           Building<br />
@@ -23,7 +23,7 @@ const Hero = () => (
           Built to Last.
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-lg" style={{ color: 'hsl(30 8% 70%)' }}>
-          Locally owned. Over 50 years of combined construction experience serving homeowners and businesses across the Reno-Sparks, Carson City, and Tahoe area.
+          Locally owned general contractor in Reno, NV with over 50 years of combined experience. Commercial construction, kitchen & bathroom remodels, and handyman services across Reno-Sparks, Carson City, and Tahoe.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button asChild size="lg" className="text-base px-8 py-6 rounded-none uppercase tracking-wider font-bold">
