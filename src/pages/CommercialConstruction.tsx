@@ -18,7 +18,7 @@ const CommercialConstruction = () => (
     {/* Hero */}
     <section className="relative pt-20">
       <div className="relative h-[400px] overflow-hidden">
-        <img src={commercialImg} alt="Commercial Construction" className="w-full h-full object-cover" />
+        <img src={commercialImg} alt="Commercial construction project in Reno, NV by Advance Builders" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-secondary/70" />
         <div className="absolute inset-0 flex items-center">
           <div className="container mx-auto px-4">
@@ -28,7 +28,7 @@ const CommercialConstruction = () => (
               </div>
               <p className="text-primary uppercase tracking-[0.3em] text-sm font-semibold" style={{ fontFamily: 'system-ui' }}>Our Services</p>
             </div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Commercial Construction</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Commercial Construction in Reno, NV</h1>
             <p className="text-white/80 max-w-2xl text-lg">
               From retail buildouts to tenant improvements, we deliver commercial projects on time and on budget — with no surprises.
             </p>

@@ -20,7 +20,7 @@ const ResidentialConstruction = () => (
     {/* Hero */}
     <section className="relative pt-20">
       <div className="relative h-[400px] overflow-hidden">
-        <img src={residentialImg} alt="Residential Construction" className="w-full h-full object-cover" />
+        <img src={residentialImg} alt="Kitchen and bathroom remodel by a Reno residential contractor" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-secondary/70" />
         <div className="absolute inset-0 flex items-center">
           <div className="container mx-auto px-4">
@@ -30,9 +30,9 @@ const ResidentialConstruction = () => (
               </div>
               <p className="text-primary uppercase tracking-[0.3em] text-sm font-semibold" style={{ fontFamily: 'system-ui' }}>Our Services</p>
             </div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Residential Construction</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Residential Construction & Remodeling in Reno, NV</h1>
             <p className="text-white/80 max-w-2xl text-lg">
-              Renovations, additions, and remodels that transform the home you already love.
+              Kitchen remodels, bathroom remodels, renovations, and additions that transform the home you already love.
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@ const ResidentialConstruction = () => (
               Transforming Your Home
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Whether you're updating a single room or planning a major remodel, Advance Builders brings craftsmanship and attention to detail to every residential project. We work closely with homeowners to understand their vision and deliver results that exceed expectations.
+              Whether you're planning a kitchen remodel, a bathroom remodel, or updating your whole home, Advance Builders brings craftsmanship and attention to detail to every residential project in the Reno area. We work closely with homeowners to understand their vision and deliver results that exceed expectations.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               From initial design consultation through final walkthrough, our experienced team manages every aspect of your project. We use quality materials, trusted subcontractors, and proven construction methods to ensure your home is built to last.
