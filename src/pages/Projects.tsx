@@ -11,7 +11,7 @@ import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
 import seoulfulBitesAfter2 from "@/assets/seoulful-bites-after-2.jpg.asset.json";
 import seoulfulBitesAfter3 from "@/assets/seoulful-bites-after-3.jpg.asset.json";
 
-const categories = ["All", "Commercial", "Residential", "Handyman"] as const;
+const categories = ["All", "Residential", "Commercial", "Handyman"] as const;
 
 type Project = {
   title: string;
@@ -56,16 +56,16 @@ const projects: Project[] = [
 ];
 
 const projectLists: Record<string, string[]> = {
+  Residential: [
+    "Bathroom and Kitchen Remodel",
+    "Multi Family Building Renovation",
+  ],
   Commercial: [
     "New Restaurant Build-Out",
     "Salon Build-Out",
     "Restaurant Renovation",
     "Insurance Renovation",
     "Bar/Nightclub Remodel",
-  ],
-  Residential: [
-    "Bathroom and Kitchen Remodel",
-    "Multi Family Building Renovation",
   ],
   Handyman: [
     "Contact us to learn about recent handyman projects and repairs we've completed.",
@@ -100,7 +100,7 @@ const Projects = () => {
             </p>
             <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">Our Projects</h1>
             <p className="text-muted-foreground max-w-2xl">
-              Take a look at some of the commercial, residential, and handyman projects we've completed for clients across the Reno-Sparks, Carson City, and Tahoe area.
+              Take a look at some of the residential, commercial, and handyman projects we've completed for clients across the Reno-Sparks, Carson City, and Tahoe area.
             </p>
           </div>
 

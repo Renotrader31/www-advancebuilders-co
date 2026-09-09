@@ -23,7 +23,7 @@ const Hero = () => (
           Built to Last.
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-lg" style={{ color: 'hsl(30 8% 70%)' }}>
-          Locally owned general contractor in Reno, NV with over 50 years of combined experience. Commercial construction, kitchen & bathroom remodels, and handyman services across Reno-Sparks, Carson City, and Tahoe.
+          Locally owned general contractor in Reno, NV with over 50 years of combined experience. Kitchen & bathroom remodels, residential construction, commercial construction, and handyman services across Reno-Sparks, Carson City, and Tahoe.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button asChild size="lg" className="text-base px-8 py-6 rounded-none uppercase tracking-wider font-bold">

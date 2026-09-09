@@ -133,8 +133,8 @@ const Contact = () => {
                 className="w-full px-4 py-3 bg-card border border-border rounded-sm text-muted-foreground focus:outline-none focus:border-primary transition-colors"
               >
                 <option value="" disabled>Select a Service</option>
-                <option value="Commercial Construction">Commercial Construction</option>
                 <option value="Residential Construction">Residential Construction</option>
+                <option value="Commercial Construction">Commercial Construction</option>
               </select>
             </div>
             <div>

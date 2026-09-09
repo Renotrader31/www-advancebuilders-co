@@ -11,7 +11,7 @@ const Footer = () => (
             <img src={logo} alt="Advance Builders" className="h-24 w-auto" />
           </div>
           <p className="text-secondary-foreground/60 text-sm leading-relaxed">
-            Quality construction services for commercial and residential clients. Licensed, insured, and committed to excellence.
+            Quality construction services for residential and commercial clients. Licensed, insured, and committed to excellence.
           </p>
         </div>
         <div>
