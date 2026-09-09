@@ -8,6 +8,7 @@ import projectCommercial2 from "@/assets/project-commercial-2.jpg";
 import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
 import seoulfulBitesBefore from "@/assets/seoulful-bites-before.jpg.asset.json";
 import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
+import seoulfulBitesAfter2 from "@/assets/seoulful-bites-after-2.jpg.asset.json";
 
 const categories = ["All", "Commercial", "Residential", "Handyman"] as const;
 
@@ -17,6 +18,7 @@ type Project = {
   description: string;
   image: string;
   beforeImage?: string;
+  afterImages?: string[];
   location: string;
   year: string;
 };
@@ -38,6 +40,7 @@ const projects: Project[] = [
       "Complete commercial tenant improvement for a self-service ramen bar, transforming an unfinished shell into a vibrant retail and dining experience.",
     image: seoulfulBitesAfter.url,
     beforeImage: seoulfulBitesBefore.url,
+    afterImages: [seoulfulBitesAfter2.url],
     location: "Reno, NV",
     year: "2025",
   },
@@ -57,6 +60,7 @@ const projectLists: Record<string, string[]> = {
     "Salon Build-Out",
     "Restaurant Renovation",
     "Insurance Renovation",
+    "Bar/Nightclub Remodel",
   ],
   Residential: [
     "Bathroom and Kitchen Remodel",
@@ -161,6 +165,23 @@ const Projects = () => {
                     </span>
                   </div>
                 </div>
+                {project.afterImages && project.afterImages.length > 0 && (
+                  <div className="grid grid-cols-2 gap-px bg-border border-t border-border">
+                    {project.afterImages.map((img, i) => (
+                      <div key={i} className="relative h-32 overflow-hidden">
+                        <img
+                          src={img}
+                          alt={`${project.title} after ${i + 2}`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                        <span className="absolute bottom-2 left-2 bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm">
+                          After
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-foreground mb-2" style={{ fontFamily: 'system-ui' }}>{project.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
