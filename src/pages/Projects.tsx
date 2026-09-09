@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import residentialRemodel from "@/assets/residential-remodel.png.asset.json";
+import residentialRemodel from "@/assets/residential-remodel-hd.png";
 import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
 import seoulfulBitesBefore from "@/assets/seoulful-bites-before.jpg.asset.json";
 import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
@@ -48,7 +48,7 @@ const projects: Project[] = [
     title: "Remodels",
     category: "Residential",
     description: "Finished residential kitchen remodel featuring custom cabinetry, an oversized island, modern fixtures, and warm natural finishes.",
-    image: residentialRemodel.url,
+    image: residentialRemodel,
     location: "Reno, NV",
     year: "2025",
   },
