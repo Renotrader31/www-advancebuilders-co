@@ -165,6 +165,23 @@ const Projects = () => {
                     </span>
                   </div>
                 </div>
+                {project.afterImages && project.afterImages.length > 0 && (
+                  <div className="grid grid-cols-2 gap-px bg-border border-t border-border">
+                    {project.afterImages.map((img, i) => (
+                      <div key={i} className="relative h-32 overflow-hidden">
+                        <img
+                          src={img}
+                          alt={`${project.title} after ${i + 2}`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                        <span className="absolute bottom-2 left-2 bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm">
+                          After
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-foreground mb-2" style={{ fontFamily: 'system-ui' }}>{project.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
