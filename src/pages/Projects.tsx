@@ -9,6 +9,7 @@ import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
 import seoulfulBitesBefore from "@/assets/seoulful-bites-before.jpg.asset.json";
 import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
 import seoulfulBitesAfter2 from "@/assets/seoulful-bites-after-2.jpg.asset.json";
+import seoulfulBitesAfter3 from "@/assets/seoulful-bites-after-3.jpg.asset.json";
 
 const categories = ["All", "Commercial", "Residential", "Handyman"] as const;
 
