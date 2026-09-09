@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-construction.jpg";
+import heroAsset from "@/assets/hero-interior.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const Hero = () => (
   <section className="relative min-h-[90vh] flex items-center justify-start overflow-hidden">
     <img
-      src={heroImage}
-      alt="Construction site at golden hour with steel beams and cranes"
+      src={heroAsset.url}
+      alt="Finished kitchen and dining area built by Advance Builders"
       className="absolute inset-0 w-full h-full object-cover"
       loading="eager"
     />
