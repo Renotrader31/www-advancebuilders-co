@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import projectCommercial2 from "@/assets/project-commercial-2.jpg";
+import residentialRemodel from "@/assets/residential-remodel.png.asset.json";
 import deckPergola from "@/assets/deck-pergola-after.jpg.asset.json";
 import seoulfulBitesBefore from "@/assets/seoulful-bites-before.jpg.asset.json";
 import seoulfulBitesAfter from "@/assets/seoulful-bites-after.jpg.asset.json";
@@ -45,12 +45,12 @@ const projects: Project[] = [
     year: "2025",
   },
   {
-    title: "Industrial Chic Restaurant",
-    category: "Commercial",
-    description: "Full interior buildout for a 3,500 sq ft restaurant space with exposed brick, custom lighting, and commercial kitchen.",
-    image: projectCommercial2,
-    location: "Midtown Reno, NV",
-    year: "2023",
+    title: "Remodels",
+    category: "Residential",
+    description: "Finished residential kitchen remodel featuring custom cabinetry, an oversized island, modern fixtures, and warm natural finishes.",
+    image: residentialRemodel.url,
+    location: "Reno, NV",
+    year: "2025",
   },
 ];
 
