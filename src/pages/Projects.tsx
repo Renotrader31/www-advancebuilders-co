@@ -41,7 +41,7 @@ const projects: Project[] = [
       "Complete commercial tenant improvement for a self-service ramen bar, transforming an unfinished shell into a vibrant retail and dining experience.",
     image: seoulfulBitesAfter.url,
     beforeImage: seoulfulBitesBefore.url,
-    afterImages: [seoulfulBitesAfter2.url],
+    afterImages: [seoulfulBitesAfter2.url, seoulfulBitesAfter3.url],
     location: "Reno, NV",
     year: "2025",
   },
